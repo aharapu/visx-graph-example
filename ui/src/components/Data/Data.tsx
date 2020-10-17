@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import Options from '../Options'
+import Chart from '../Chart'
 
-const Data = () => {
+const Data: FunctionComponent = () => {
     return (
         <div>
-            
+            <Options />
+            <Chart />
         </div>
     )
 }

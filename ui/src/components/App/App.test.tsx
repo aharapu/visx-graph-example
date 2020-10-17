@@ -1,11 +1,15 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, ShallowWrapper } from 'enzyme'
 import App from './App'
 import Header from '../Header'
 import Data from '../Data'
 
 describe('App component', () => {
-    const appWrapper = shallow(<App />)
+    let appWrapper: ShallowWrapper
+
+    beforeAll(() => {
+        appWrapper = shallow(<App />)
+    })
 
     it('renders a Header component', () => {
         expect(appWrapper.find(Header)).toHaveLength(1)

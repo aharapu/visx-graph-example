@@ -1,3 +1,13 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
+import propTypes from './propTypes'
 
-export default () => <div></div>
+const Header: FunctionComponent<propTypes> = ({title, subtitle}) => {
+    return (
+        <div>
+            <h1>{title}</h1>
+            <h3>{subtitle}</h3>
+        </div>
+    )
+}
+
+export default Header
