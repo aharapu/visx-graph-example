@@ -22,4 +22,10 @@ describe('Data component', () => {
         expect(chartComponent).toHaveLength(1)
     })
     
+
+    it('holds "dataSet" state', () => {
+        expect(dataWrapper.state()).toBeTruthy
+        expect(dataWrapper.state().dataSet).toBeTruthy
+    })
+    
 })
