@@ -1,6 +1,7 @@
 import { shallow, ShallowWrapper } from "enzyme"
 import React from 'react'
 import Options from './Options'
+import Adjustments from '../Adjustments'
 
 describe('Options component', () => {
     
@@ -49,7 +50,14 @@ describe('Options component', () => {
                 expect(dataOptWrap.props().value).toEqual(DATA_SETS[idx])
             })
         })
-
-        
     }) 
+
+    describe('Adjustments as child component', () => {
+        
+        it('renders an Adjustments component', () => {
+            const adjustments = optionsWrapper.find(Adjustments)
+        })
+        
+    })
+    
 })

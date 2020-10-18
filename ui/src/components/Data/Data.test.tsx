@@ -22,10 +22,12 @@ describe('Data component', () => {
         expect(chartComponent).toHaveLength(1)
     })
     
+    // using a function component cannot use wrapper.state()
+    // TODO -> find a way to test state
 
-    it('holds "dataSet" state', () => {
-        expect(dataWrapper.state()).toBeTruthy
-        expect(dataWrapper.state().dataSet).toBeTruthy
-    })
+    // it('holds "dataSet" state', () => {
+    //     expect(dataWrapper.state()).toBeTruthy
+    //     expect(dataWrapper.state().dataSet).toBeTruthy
+    // })
     
 })
