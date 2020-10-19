@@ -1,5 +1,12 @@
 import React, { FunctionComponent } from 'react'
 
+import UsersTable from './UsersTable'
+
+
+const displayVariants = {
+    users: <UsersTable />
+}
+
 interface Props {
     
 }
