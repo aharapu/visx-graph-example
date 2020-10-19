@@ -25,3 +25,7 @@ export interface Post {
 export interface PostsData {
     allPosts: Post[]
 }
+export interface DisplayVariants {
+    users: JSX.Element
+    posts: JSX.Element
+}

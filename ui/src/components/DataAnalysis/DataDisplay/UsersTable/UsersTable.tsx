@@ -6,7 +6,7 @@ interface Props {
 
 const UsersTable = (props: Props) => {
     return (
-        <div>
+        <div className='users-table'>
             I am the user table
         </div>
     )

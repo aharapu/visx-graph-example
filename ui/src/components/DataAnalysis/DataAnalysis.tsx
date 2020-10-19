@@ -19,7 +19,7 @@ const Data: FunctionComponent<PropTypes> = () => {
     return (
         <div>
             <DataMenu dataSets={DATA_SETS} />
-            <DataDisplay />
+            <DataDisplay dataVariant='users' />
         </div>
     )
 }
