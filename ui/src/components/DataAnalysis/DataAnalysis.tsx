@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from 'react'
 import DataMenu from './DataMenu'
-import Chart from '../Chart/Chart'
+import DataDisplay from './DataDisplay'
 
 import DATA_SETS from '../../mocks/dataSets'
 
@@ -19,7 +19,7 @@ const Data: FunctionComponent<PropTypes> = () => {
     return (
         <div>
             <DataMenu dataSets={DATA_SETS} />
-            <Chart />
+            <DataDisplay />
         </div>
     )
 }

@@ -5,7 +5,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 import DataAnalysis from './DataAnalysis'
 import DataMenu from './DataMenu'
-import Chart from '../Chart/Chart'
+import DataDisplay from './DataDisplay'
 
 describe('DataAnalysis component', () => {
     let dataAnalysisWrapper: ReactWrapper
@@ -28,8 +28,8 @@ describe('DataAnalysis component', () => {
         expect(optionsComponent).toHaveLength(1)
     })
 
-    test('should render a Chart component', () => {
-        const chartComponent = dataAnalysisWrapper.find(Chart)
+    test('should render a DataDisplay component', () => {
+        const chartComponent = dataAnalysisWrapper.find(DataDisplay)
         expect(chartComponent).toHaveLength(1)
     })
 

@@ -4,7 +4,7 @@ interface Props {
     
 }
 
-const Chart: FunctionComponent = (props: Props) => {
+const DataDisplay: FunctionComponent = (props: Props) => {
     return (
         <div>
             
@@ -12,4 +12,4 @@ const Chart: FunctionComponent = (props: Props) => {
     )
 }
 
-export default Chart
+export default DataDisplay
