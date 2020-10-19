@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from 'react'
 import './App.css'
 import Header from '../Header'
-import Data from '../Data'
+import DataAnalysis from '../DataAnalysis'
 import { TITLE, SUBTITLE } from '../../constants/textStrings'
 
 const App: FunctionComponent = () => {
     return (
         <>
             <Header title={TITLE} subtitle={SUBTITLE} />
-            <Data />
+            <DataAnalysis />
         </>
     )
 }

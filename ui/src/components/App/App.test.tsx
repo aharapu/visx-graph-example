@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, ShallowWrapper } from 'enzyme'
 import App from './App'
 import Header from '../Header'
-import Data from '../Data'
+import Data from '../DataAnalysis'
 
 describe('App component', () => {
     let appWrapper: ShallowWrapper

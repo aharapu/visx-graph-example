@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from 'react'
-import Options from '../Options'
-import Chart from '../Chart'
+import DataMenu from './DataMenu'
+import Chart from '../Chart/Chart'
 
 import DATA_SETS from '../../mocks/dataSets'
 
@@ -16,11 +16,9 @@ const Data: FunctionComponent<PropTypes> = () => {
     const { loading: usersLoading, error: usersError, data: usersData } = useQuery<UsersData>(USERS_QUERY)
     const [dataType, setDataType] = useState<DataType>("")
 
-    console.log('usersData', usersData)
-    console.log('postsData', postsData)
     return (
         <div>
-            <Options dataSets={DATA_SETS} />
+            <DataMenu dataSets={DATA_SETS} />
             <Chart />
         </div>
     )
